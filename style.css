@@ -1,0 +1,94 @@
+/* Paleta de colores */
+:root {
+    --rosa: #f2b6c6;
+    --verde: #52796f;
+    --blanco: #ffffff;
+}
+
+/* Estilos generales */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    background-color: var(--blanco);
+}
+
+/* Contenido centrado */
+header,
+main,
+footer {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* Encabezado */
+header {
+    background-color: var(--rosa);
+}
+
+/* Menú horizontal */
+nav {
+    display: flex;
+    gap: 20px;
+}
+
+/* Enlaces sin subrayado */
+nav a {
+    text-decoration: none;
+}
+
+/* Secciones */
+section {
+    padding: 20px;
+    border: 1px solid var(--verde);
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+input,
+textarea {
+    padding: 10px;
+    border: 1px solid var(--verde);
+    border-radius: 5px;
+    font-family: Arial, sans-serif;
+}
+
+button {
+    margin-top: 15px;
+    padding: 12px;
+    background-color: var(--verde);
+    color: var(--blanco);
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #354f48;
+}
+
+#mensaje {
+    padding: 10px;
+    color: var(--verde);
+    border: 1px solid var(--verde);
+    border-radius: 5px;
+}
+/* El mensaje comienza oculto */
+.oculto {
+    display: none;
+}
+
+/* Adaptación a pantallas pequeñas */
+@media (max-width: 600px) {
+    nav {
+        flex-direction: column;
+        gap: 10px;
+    }
+}
